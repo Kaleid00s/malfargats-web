@@ -1,39 +1,15 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malfargats de Pallars</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malfargats - Pinya</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Malfargats de Pallars</h1>
-
-  <div id="login">
-    <h2>Inicia sessió</h2>
-    <input type="email" id="email" placeholder="Correu" />
-    <input type="password" id="password" placeholder="Contrasenya" />
-    <button onclick="iniciarSessio()">Entrar</button>
-  </div>
-
-  <div id="pinya" style="display:none;">
-    <h2>Pinya</h2>
-    <table id="taulaPinya"></table>
-    <button onclick="tancarSessio()">Tancar sessió</button>
-  </div>
+  <h1>Distribució de la Pinya</h1>
+  <div id="pinya-container"></div>
 
   <script src="script.js"></script>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('serviceWorker.js')
-      .then(function(registration) {
-        console.log('ServiceWorker registrat amb èxit:', registration.scope);
-      }).catch(function(error) {
-        console.log('Error en registrar el ServiceWorker:', error);
-      });
-  }
-</script>
-
 </body>
 </html>
