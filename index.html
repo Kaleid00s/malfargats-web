@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malfargats - Inici de Sessió</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malfargats de Pallars</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
 </head>
 <body>
-
   <div class="login-container">
     <img src="logo.png" alt="Logotip Malfargats" class="logo">
-    <h1>Benvingut/da als Malfargats</h1>
-
+    <h2>Inicia sessió</h2>
     <form id="login-form">
-      <input type="email" placeholder="Correu electrònic" required>
-      <input type="password" placeholder="Contrasenya" required>
-      <button type="submit">Inicia sessió</button>
+      <input type="email" id="email" placeholder="Correu electrònic" required />
+      <input type="password" id="password" placeholder="Contrasenya" required />
+      <button type="submit">Entrar</button>
     </form>
   </div>
 
   <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('serviceWorker.js')
+        .then(function(registration) {
+          console.log('ServiceWorker registrat amb èxit:', registration.scope);
+        }).catch(function(error) {
+          console.log('Error en registrar el ServiceWorker:', error);
+        });
+    }
+  </script>
 </body>
 </html>
