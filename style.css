@@ -1,23 +1,32 @@
 body {
   font-family: sans-serif;
-  margin: 20px;
-  background-color: #f0f0f0;
+  text-align: center;
+  background: #f0f0f0;
 }
 
-input, button {
-  display: block;
-  margin: 10px 0;
-  padding: 8px;
+#pinya-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #333;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background: white;
+.casteller {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #d32f2f;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  cursor: default;
 }
 
-td {
-  padding: 10px;
-  border: 1px solid #ccc;
+.casteller.self {
+  background-color: #1976d2; /* el teu color destacat */
 }
