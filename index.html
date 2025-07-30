@@ -3,12 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malfargats - Pinya</title>
+  <title>Malfargats - Inici de Sessió</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Distribució de la Pinya</h1>
-  <div id="pinya-container"></div>
+
+  <div class="login-container">
+    <img src="logo.png" alt="Logotip Malfargats" class="logo">
+    <h1>Benvingut/da als Malfargats</h1>
+
+    <form id="login-form">
+      <input type="email" placeholder="Correu electrònic" required>
+      <input type="password" placeholder="Contrasenya" required>
+      <button type="submit">Inicia sessió</button>
+    </form>
+  </div>
 
   <script src="script.js"></script>
 </body>
