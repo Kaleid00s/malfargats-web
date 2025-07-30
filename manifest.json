@@ -1,0 +1,9 @@
+{
+  "name": "Malfargats de Pallars",
+  "short_name": "Malfargats",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff0000",
+  "icons": []
+}
